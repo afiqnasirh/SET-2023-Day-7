@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiq Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h2 id="output">0</h2>
+        </div>
+      </header>
+      <main>
+        <div class="right">
+          <div class="symbol">
+            <button onclick="clearAll" id="clear">C</button>
+          </div>
+          <div class="numbers">
+            <div class="row-1">
+              <button onclick="insertNum(7)" id="7">7</button>
+              <button onclick="insertNum(8)" id="8">8</button>
+              <button onclick="insertNum(9)" id="9">9</button>
+            </div>
+            <div class="row-2">
+              <button onclick="insertNum(4)" id="4">4</button>
+              <button onclick="insertNum(5)" id="5">5</button>
+              <button onclick="insertNum(6)" id="6">6</button>
+            </div>
+            <div class="row-3">
+              <button onclick="insertNum(1)" id="1">1</button>
+              <button onclick="insertNum(2)" id="2">2</button>
+              <button onclick="insertNum(3)" id="3">3</button>
+            </div>
+            <div class="row-4">
+              <button onclick="insertNum(.)" id=".">.</button>
+              <button onclick="insertNum(0)" id="0">0</button>
+              <button onclick="insertNum()" id="backspace">
+                <i class="bi bi-backspace"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <button onclick="" id="times">x</button>
+          <button onclick="" id="divide">/</button>
+          <button onclick="" id="minus">-</button>
+          <button onclick="" id="add">+</button>
+          <button onclick="" id="equal">=</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
